@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.13\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +50,122 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Controlador.cs" />
+    <Compile Include="frmCatalogoSig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmCatalogoSig.Designer.cs">
+      <DependentUpon>frmCatalogoSig.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta.Designer.cs">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContra.Designer.cs">
+      <DependentUpon>frmContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditElim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditElim.Designer.cs">
+      <DependentUpon>frmEditElim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditElimPac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditElimPac.Designer.cs">
+      <DependentUpon>frmEditElimPac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoSigno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoSigno.Designer.cs">
+      <DependentUpon>frmNuevoSigno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientesCRUD.Designer.cs">
+      <DependentUpon>frmPacientesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\frmEditElimUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\frmEditElimUs.Designer.cs">
+      <DependentUpon>frmEditElimUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignos.Designer.cs">
+      <DependentUpon>frmSignos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\frmUsuariosCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\frmUsuariosCRUD.Designer.cs">
+      <DependentUpon>frmUsuariosCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelo.cs" />
+    <Compile Include="Pacientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Session.cs" />
+    <Compile Include="Signos.cs" />
+    <Compile Include="Usuarios\Usuarios.cs" />
+    <EmbeddedResource Include="frmCatalogoSig.resx">
+      <DependentUpon>frmCatalogoSig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulta.resx">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContra.resx">
+      <DependentUpon>frmContra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditElim.resx">
+      <DependentUpon>frmEditElim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditElimPac.resx">
+      <DependentUpon>frmEditElimPac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoSigno.resx">
+      <DependentUpon>frmNuevoSigno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientesCRUD.resx">
+      <DependentUpon>frmPacientesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\frmEditElimUs.resx">
+      <DependentUpon>frmEditElimUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignos.resx">
+      <DependentUpon>frmSignos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\frmUsuariosCRUD.resx">
+      <DependentUpon>frmUsuariosCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +176,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Pacientes.datasource" />
+    <None Include="Properties\DataSources\Usuarios.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
