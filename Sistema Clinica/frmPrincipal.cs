@@ -17,7 +17,6 @@ namespace Sistema_Clinica
         public frmPrincipal()
         {
             InitializeComponent();
-
             grpUsu.Text = Session.usuario;
         }
 
@@ -25,9 +24,8 @@ namespace Sistema_Clinica
         {
             cmbUsuarios.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPacientes.DropDownStyle = ComboBoxStyle.DropDownList;
-            /*cmbUsuarios.Items.Add("Usuarios");
-            cmbUsuarios.SelectedIndex = 3;
-            */
+            cmbCatSign.DropDownStyle = ComboBoxStyle.DropDownList;
+           
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -49,16 +47,16 @@ namespace Sistema_Clinica
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            frmConsulta frm = new frmConsulta();
+            frmCalendario frm = new frmCalendario();
             frm.Visible = true;
             this.Visible = false;
-            frm.btnSignos.Visible = false;
         }
 
         private void cmbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
         {
             frmUsuariosCRUD frm = new frmUsuariosCRUD();
             frmEditElimUs frm2 = new frmEditElimUs();
+            //Catalogo_signos cats = null;
             int indice = cmbUsuarios.SelectedIndex;
 
             indice.ToString();
@@ -74,6 +72,15 @@ namespace Sistema_Clinica
                     this.Visible = false; 
                     frm2.btnEliminar.Visible = false;
                     frm2.btnEditar.Location = new Point(582, 318);
+                    frm2.btnEditar.Visible = false;
+                    frm2.txtNombres.Enabled = false;
+                    frm2.txtApellidos.Enabled = false;
+                    frm2.txtUsuario.Enabled = false;
+                    frm2.Text = "Editar usuarios";
+                    frm2.txtContra.Enabled = false;
+                    frm2.validar = 1;
+                    //cats.Cambio = 1;
+                    
                     break;
                 case 2:
                     frm2.Visible = true;
@@ -83,6 +90,10 @@ namespace Sistema_Clinica
                     frm2.txtUsuario.Enabled = false;
                     frm2.btnEditar.Visible = false;
                     frm2.btnEliminar.Location = new Point(582,318);
+                    frm2.Text = "Eliminar usuarios";
+                    frm2.validar = 2;
+                    frm2.txtContra.Visible = false;
+                    //cats.Cambio = 2;
                     break;
                 
 
@@ -108,6 +119,19 @@ namespace Sistema_Clinica
                     this.Visible = false;
                     frm2.btnEliminar.Visible = false;
                     frm2.btnEditar.Location = new Point(916, 419);
+                    frm2.Text = "Editar Paciente";
+                    frm2.txtNombres.Enabled = false;
+                    frm2.txtApellidos.Enabled = false;
+                    frm2.cmbSangre.Enabled = false;
+                    frm2.txtTelefono.Enabled = false;
+                    frm2.txtCelular.Enabled = false;
+                    frm2.dtmNacimiento.Enabled = false;
+                    frm2.txtAlergias.Enabled = false;
+                    frm2.cmbSexo.Enabled = false;
+                    frm2.txtDPI.Enabled = false;
+                    frm2.btnEditar.Visible = false;
+                    frm2.validar = 1;
+                    
                     break;
                 case 2:
                     frm2.Visible = true;
@@ -123,6 +147,8 @@ namespace Sistema_Clinica
                     frm2.txtDPI.Enabled = false;
                     frm2.btnEditar.Visible = false;
                     frm2.btnEliminar.Location = new Point(916, 419);
+                    frm2.Text = "Eliminar Paciente";
+                    frm2.validar = 2;
                     break;
                 
             }
@@ -162,6 +188,7 @@ namespace Sistema_Clinica
             frmCatalogoSig frm = new frmCatalogoSig();
             frmNuevoSigno frm2 = new frmNuevoSigno();
             Usuarios usuario = new Usuarios();
+            Catalogo_signos cats = new Catalogo_signos();
             int indice = cmbCatSign.SelectedIndex;
             usuario.Indice = indice;
 
@@ -176,31 +203,24 @@ namespace Sistema_Clinica
                 case 1:
                     frm.Visible = true;
                     this.Visible = false;
-                    frm.lbltexto.Text = "Deshabilitados";
-                    frm.button1.Visible = true;
-                    frm.cmbSignos.Visible = false;
-                    frm.button2.Visible = false;
-                    frm.button1.Location = new Point(94, 140);
-                    frm.lbltexto.Location = new Point(58, 48);
-                    frm.btnCancelar.Location = new Point(94, 169);
-                    break;
-                case 2:
-                    frm.Visible = true;
-                    this.Visible = false;
-                    frm.lbltexto.Text = "Habilitados";
-                    frm.button2.Visible = true;
-                    frm.button1.Visible = false;
-                    frm.cmbSignos2.Visible = false;
-                    frm.button2.Location = new Point(94, 140);
-                    frm.lbltexto.Location = new Point(76, 48);
-                    frm.btnCancelar.Location = new Point(94, 169);
-
+                    frm.lbltexto.Visible = false;
+                    frm.txtDescripcion.Enabled = false;
+                    frm.txtMedida.Enabled = false;
+                    frm.txtNombre.Enabled = false;
+                    frm.cmbEstado.Enabled = false;
+                    frm.btnActualizar.Visible = false;
+                    frm.dtvgcats.Location = new Point(12, 71);
                     break;
                 
             }
         }
 
         private void grpUsu_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

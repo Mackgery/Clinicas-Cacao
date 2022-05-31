@@ -52,9 +52,7 @@ namespace Sistema_Clinica
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(196, 23);
             this.txtNombres.TabIndex = 0;
-            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             this.txtNombres.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombres_KeyDown);
-            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // txtApellidos
             // 
@@ -64,18 +62,17 @@ namespace Sistema_Clinica
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(196, 23);
             this.txtApellidos.TabIndex = 1;
-            this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
             this.txtApellidos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtApellidos_KeyDown);
             // 
             // txtUsuario
             // 
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(168, 161);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(196, 23);
             this.txtUsuario.TabIndex = 2;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
             // txtPass
@@ -87,7 +84,6 @@ namespace Sistema_Clinica
             this.txtPass.PasswordChar = '•';
             this.txtPass.Size = new System.Drawing.Size(196, 23);
             this.txtPass.TabIndex = 3;
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // label1
@@ -100,7 +96,6 @@ namespace Sistema_Clinica
             this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombres";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -112,7 +107,6 @@ namespace Sistema_Clinica
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Apellidos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -124,7 +118,6 @@ namespace Sistema_Clinica
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Usuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -136,7 +129,6 @@ namespace Sistema_Clinica
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Contraseña";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnGuardar
             // 
@@ -179,7 +171,6 @@ namespace Sistema_Clinica
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Usuario";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // frmUsuariosCRUD
             // 

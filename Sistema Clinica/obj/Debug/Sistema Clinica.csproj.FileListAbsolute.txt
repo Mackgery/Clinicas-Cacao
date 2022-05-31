@@ -23,3 +23,9 @@ C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmContra.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmNuevoSigno.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEditElimUs.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmPacientes.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEvaluacion.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmCalendario.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmImpresion.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmConsulta2.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmSignoev.resources

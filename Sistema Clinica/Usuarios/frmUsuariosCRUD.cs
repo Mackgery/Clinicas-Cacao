@@ -22,51 +22,6 @@ namespace Sistema_Clinica
             txtNombres.Focus();
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtApellidos_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Usuarios usuario = new Usuarios();
@@ -82,6 +37,7 @@ namespace Sistema_Clinica
                 if (respuesta.Length > 0)
                 {
                     MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtNombres.Focus();
                 }
                 else
                 {
@@ -99,11 +55,6 @@ namespace Sistema_Clinica
             frmPrincipal frm = new frmPrincipal();
             frm.Visible = true;
             this.Visible = false;
-        }
-
-        private void txtNombres_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
         }
 
         private void txtNombres_KeyDown(object sender, KeyEventArgs e)

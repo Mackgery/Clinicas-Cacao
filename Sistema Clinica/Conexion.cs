@@ -14,7 +14,7 @@ namespace Sistema_Clinica
             string servidor = "localhost";
             string puerto = "3306";
             string usuario = "root";
-            string password = "";
+            string password = "ortox3l4";
             string bd = "clinicas";
 
             string CadenaConexion = "server=" + servidor + "; port=" + puerto + "; user=" + usuario + "; password=" + password + "; database=" + bd;

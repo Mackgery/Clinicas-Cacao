@@ -12,7 +12,7 @@ namespace Sistema_Clinica
 {
     public partial class frmEditElimPac : Form
     {
-       
+        public int validar = 0;
         public frmEditElimPac()
         {
             InitializeComponent();
@@ -47,6 +47,7 @@ namespace Sistema_Clinica
             paciente.Tipo_sangre = cmbSangre.Text;
             paciente.Alergias = txtAlergias.Text;
             paciente.Idusmod = frm.id_usuario;
+            paciente.Dpicom = txtDPI.Text;
            
             try
             {
@@ -62,8 +63,6 @@ namespace Sistema_Clinica
                     if (r == DialogResult.Yes)
                     {
                         MessageBox.Show("Paciente actualizado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        frm.Visible = true;
-                        this.Visible = false;
                     }
                 }
             }
@@ -71,6 +70,21 @@ namespace Sistema_Clinica
             {
                 MessageBox.Show("Error al actualizar: ", ex.Message);
             }
+            btnEliminar.Visible = false;
+            btnEditar.Location = new Point(916, 419);
+            Text = "Editar Paciente";
+            txtNombres.Enabled = false;
+            txtApellidos.Enabled = false;
+            cmbSangre.Enabled = false;
+            txtTelefono.Enabled = false;
+            txtCelular.Enabled = false;
+            dtmNacimiento.Enabled = false;
+            txtAlergias.Enabled = false;
+            cmbSexo.Enabled = false;
+            txtDPI.Enabled = false;
+            btnEditar.Visible = false;
+            validar = 1;
+            CargarTabla(null);
             limpiar();
 
         }
@@ -106,10 +120,6 @@ namespace Sistema_Clinica
             Session ss = new Session();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
       
 
         private void CargarTabla(string dato)
@@ -119,23 +129,7 @@ namespace Sistema_Clinica
             dtgvPacientes.DataSource = ctrl.consultapac(dato);
         }
 
-        private void dtgvPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtNombres.Text = dtgvPacientes.CurrentRow.Cells[0].Value.ToString();
-            txtApellidos.Text = dtgvPacientes.CurrentRow.Cells[1].Value.ToString();
-            txtDPI.Text = dtgvPacientes.CurrentRow.Cells[2].Value.ToString();
-            cmbSexo.Text = dtgvPacientes.CurrentRow.Cells[3].Value.ToString();
-            dtmNacimiento.Text = dtgvPacientes.CurrentRow.Cells[4].Value.ToString();
-            txtTelefono.Text = dtgvPacientes.CurrentRow.Cells[5].Value.ToString();
-            txtCelular.Text = dtgvPacientes.CurrentRow.Cells[6].Value.ToString();
-            cmbSangre.Text = dtgvPacientes.CurrentRow.Cells[7].Value.ToString();
-            txtAlergias.Text = dtgvPacientes.CurrentRow.Cells[8].Value.ToString();
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -152,43 +146,32 @@ namespace Sistema_Clinica
                 }
                 else
                 {
-                    DialogResult r = MessageBox.Show("¿Seguro que desea eliminar este paciente?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    control.ctrleliminapac(paciente);
+                    MessageBox.Show("Paciente eliminado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+/*                    DialogResult r = MessageBox.Show("¿Seguro que desea eliminar este paciente?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (r == DialogResult.Yes)
                     {
-                        control.ctrleliminapac(paciente);
-                        MessageBox.Show("Paciente eliminado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    }*/
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al eliminar: ", ex.Message);
             }
+            txtNombres.Enabled = false;
+            txtApellidos.Enabled = false;
+            cmbSangre.Enabled = false;
+            txtTelefono.Enabled = false;
+            txtCelular.Enabled = false;
+            dtmNacimiento.Enabled = false;
+            txtAlergias.Enabled = false;
+            cmbSexo.Enabled = false;
+            txtDPI.Enabled = false;
+            btnEditar.Visible = false;
+            btnEliminar.Location = new Point(916, 419);
+            Text = "Eliminar Paciente";
             CargarTabla(null);
             limpiar();
-        }
-
-        private void txtNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtgvPacientes_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                txtNombres.Text = dtgvPacientes.CurrentRow.Cells[0].Value.ToString();
-                txtApellidos.Text = dtgvPacientes.CurrentRow.Cells[1].Value.ToString();
-                txtDPI.Text = dtgvPacientes.CurrentRow.Cells[2].Value.ToString();
-                cmbSexo.Text = dtgvPacientes.CurrentRow.Cells[3].Value.ToString();
-                dtmNacimiento.Text = dtgvPacientes.CurrentRow.Cells[4].Value.ToString();
-                txtTelefono.Text = dtgvPacientes.CurrentRow.Cells[5].Value.ToString();
-                txtCelular.Text = dtgvPacientes.CurrentRow.Cells[6].Value.ToString();
-                cmbSangre.Text = dtgvPacientes.CurrentRow.Cells[7].Value.ToString();
-                txtAlergias.Text = dtgvPacientes.CurrentRow.Cells[8].Value.ToString();
-
-                e.SuppressKeyPress = true;
-            }
         }
 
         private void limpiar()
@@ -202,6 +185,43 @@ namespace Sistema_Clinica
             txtCelular.Text = "";
             cmbSangre.Text = "";
             txtAlergias.Text = "";
+        }
+
+        private void dtgvPacientes_DoubleClick(object sender, EventArgs e)
+        {
+            txtNombres.Text = dtgvPacientes.CurrentRow.Cells[0].Value.ToString();
+            txtApellidos.Text = dtgvPacientes.CurrentRow.Cells[1].Value.ToString();
+            txtDPI.Text = dtgvPacientes.CurrentRow.Cells[2].Value.ToString();
+            cmbSexo.Text = dtgvPacientes.CurrentRow.Cells[3].Value.ToString();
+            dtmNacimiento.Text = dtgvPacientes.CurrentRow.Cells[4].Value.ToString();
+            txtTelefono.Text = dtgvPacientes.CurrentRow.Cells[5].Value.ToString();
+            txtCelular.Text = dtgvPacientes.CurrentRow.Cells[6].Value.ToString();
+            cmbSangre.Text = dtgvPacientes.CurrentRow.Cells[7].Value.ToString();
+            txtAlergias.Text = dtgvPacientes.CurrentRow.Cells[8].Value.ToString();
+            if (validar == 1)
+            {
+                txtNombres.Enabled = true;
+                txtApellidos.Enabled = true;
+                cmbSangre.Enabled = true;
+                txtTelefono.Enabled = true;
+                txtCelular.Enabled = true;
+                dtmNacimiento.Enabled = true;
+                txtAlergias.Enabled = true;
+                cmbSexo.Enabled = true;
+                txtDPI.Enabled = true;
+                btnEditar.Visible = true;
+            }
+        }
+
+        private void txtDPI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                return;
+            }
+            e.Handled = char.IsWhiteSpace(e.KeyChar);
+
         }
     }
 }

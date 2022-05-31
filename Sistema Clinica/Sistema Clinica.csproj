@@ -50,54 +50,96 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendario\claseprueba.cs" />
+    <Compile Include="Calendario\Consprueba.cs" />
+    <Compile Include="Calendario\Consulta.cs" />
+    <Compile Include="Calendario\EvaDatos.cs" />
+    <Compile Include="Calendario\Evaluacion.cs" />
+    <Compile Include="Calendario\frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario\frmCalendario.Designer.cs">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario\frmConsulta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario\frmConsulta2.Designer.cs">
+      <DependentUpon>frmConsulta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario\frmEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario\frmEvaluacion.Designer.cs">
+      <DependentUpon>frmEvaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario\frmImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario\frmImpresion.Designer.cs">
+      <DependentUpon>frmImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignoev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignoev.Designer.cs">
+      <DependentUpon>frmSignoev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\frmPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes\frmPacientes.Designer.cs">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signos\Catalogo_signos.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Controlador.cs" />
-    <Compile Include="frmCatalogoSig.cs">
+    <Compile Include="Signos\frmCatalogoSig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCatalogoSig.Designer.cs">
+    <Compile Include="Signos\frmCatalogoSig.Designer.cs">
       <DependentUpon>frmCatalogoSig.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsulta.cs">
+    <Compile Include="Calendario\frmConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsulta.Designer.cs">
+    <Compile Include="Calendario\frmConsulta.Designer.cs">
       <DependentUpon>frmConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmContra.cs">
+    <Compile Include="Usuarios\frmContra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmContra.Designer.cs">
+    <Compile Include="Usuarios\frmContra.Designer.cs">
       <DependentUpon>frmContra.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEditElim.cs">
+    <Compile Include="Usuarios\frmEditElim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEditElim.Designer.cs">
+    <Compile Include="Usuarios\frmEditElim.Designer.cs">
       <DependentUpon>frmEditElim.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEditElimPac.cs">
+    <Compile Include="Pacientes\frmEditElimPac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEditElimPac.Designer.cs">
+    <Compile Include="Pacientes\frmEditElimPac.Designer.cs">
       <DependentUpon>frmEditElimPac.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Usuarios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Usuarios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNuevoSigno.cs">
+    <Compile Include="Signos\frmNuevoSigno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNuevoSigno.Designer.cs">
+    <Compile Include="Signos\frmNuevoSigno.Designer.cs">
       <DependentUpon>frmNuevoSigno.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPacientesCRUD.cs">
+    <Compile Include="Pacientes\frmPacientesCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPacientesCRUD.Designer.cs">
+    <Compile Include="Pacientes\frmPacientesCRUD.Designer.cs">
       <DependentUpon>frmPacientesCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
@@ -112,10 +154,10 @@
     <Compile Include="Usuarios\frmEditElimUs.Designer.cs">
       <DependentUpon>frmEditElimUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSignos.cs">
+    <Compile Include="Signos\frmSignos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSignos.Designer.cs">
+    <Compile Include="Signos\frmSignos.Designer.cs">
       <DependentUpon>frmSignos.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios\frmUsuariosCRUD.cs">
@@ -125,34 +167,52 @@
       <DependentUpon>frmUsuariosCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="modelo.cs" />
-    <Compile Include="Pacientes.cs" />
+    <Compile Include="Pacientes\Pacientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
-    <Compile Include="Signos.cs" />
+    <Compile Include="Signos\Signos.cs" />
     <Compile Include="Usuarios\Usuarios.cs" />
-    <EmbeddedResource Include="frmCatalogoSig.resx">
+    <EmbeddedResource Include="Calendario\frmCalendario.resx">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario\frmConsulta2.resx">
+      <DependentUpon>frmConsulta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario\frmEvaluacion.resx">
+      <DependentUpon>frmEvaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario\frmImpresion.resx">
+      <DependentUpon>frmImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignoev.resx">
+      <DependentUpon>frmSignoev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\frmPacientes.resx">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signos\frmCatalogoSig.resx">
       <DependentUpon>frmCatalogoSig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsulta.resx">
+    <EmbeddedResource Include="Calendario\frmConsulta.resx">
       <DependentUpon>frmConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmContra.resx">
+    <EmbeddedResource Include="Usuarios\frmContra.resx">
       <DependentUpon>frmContra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEditElim.resx">
+    <EmbeddedResource Include="Usuarios\frmEditElim.resx">
       <DependentUpon>frmEditElim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEditElimPac.resx">
+    <EmbeddedResource Include="Pacientes\frmEditElimPac.resx">
       <DependentUpon>frmEditElimPac.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Usuarios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoSigno.resx">
+    <EmbeddedResource Include="Signos\frmNuevoSigno.resx">
       <DependentUpon>frmNuevoSigno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPacientesCRUD.resx">
+    <EmbeddedResource Include="Pacientes\frmPacientesCRUD.resx">
       <DependentUpon>frmPacientesCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -161,7 +221,7 @@
     <EmbeddedResource Include="Usuarios\frmEditElimUs.resx">
       <DependentUpon>frmEditElimUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSignos.resx">
+    <EmbeddedResource Include="Signos\frmSignos.resx">
       <DependentUpon>frmSignos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\frmUsuariosCRUD.resx">
@@ -176,7 +236,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Catalogo_signos.datasource" />
+    <None Include="Properties\DataSources\Consulta.datasource" />
+    <None Include="Properties\DataSources\frmSignos.datasource" />
     <None Include="Properties\DataSources\Pacientes.datasource" />
+    <None Include="Properties\DataSources\Signos.datasource" />
     <None Include="Properties\DataSources\Usuarios.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

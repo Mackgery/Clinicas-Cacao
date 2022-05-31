@@ -35,8 +35,6 @@ namespace Sistema_Clinica
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnConsulta = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnEva = new System.Windows.Forms.Button();
             this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             this.cmbPacientes = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -46,11 +44,11 @@ namespace Sistema_Clinica
             this.cmbCatSign = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.grpUsu.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +75,7 @@ namespace Sistema_Clinica
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(204, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(301, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 52);
             this.pictureBox3.TabIndex = 3;
@@ -86,7 +84,7 @@ namespace Sistema_Clinica
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(401, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(571, 14);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(54, 52);
             this.pictureBox4.TabIndex = 5;
@@ -95,31 +93,13 @@ namespace Sistema_Clinica
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(392, 79);
+            this.btnConsulta.Location = new System.Drawing.Point(563, 81);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 6;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = true;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(584, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(49, 52);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            // 
-            // btnEva
-            // 
-            this.btnEva.Location = new System.Drawing.Point(573, 79);
-            this.btnEva.Name = "btnEva";
-            this.btnEva.Size = new System.Drawing.Size(75, 23);
-            this.btnEva.TabIndex = 8;
-            this.btnEva.Text = "Evaluación ";
-            this.btnEva.UseVisualStyleBackColor = true;
             // 
             // cmbUsuarios
             // 
@@ -131,7 +111,7 @@ namespace Sistema_Clinica
             this.cmbUsuarios.Location = new System.Drawing.Point(12, 81);
             this.cmbUsuarios.Name = "cmbUsuarios";
             this.cmbUsuarios.Size = new System.Drawing.Size(86, 21);
-            this.cmbUsuarios.TabIndex = 9;
+            this.cmbUsuarios.TabIndex = 20;
             this.cmbUsuarios.Text = "Usuarios";
             this.cmbUsuarios.SelectedIndexChanged += new System.EventHandler(this.cmbUsuarios_SelectedIndexChanged);
             // 
@@ -142,7 +122,7 @@ namespace Sistema_Clinica
             "Crear Paciente",
             "Editar Paciente",
             "Eliminar Paciente"});
-            this.cmbPacientes.Location = new System.Drawing.Point(189, 81);
+            this.cmbPacientes.Location = new System.Drawing.Point(282, 81);
             this.cmbPacientes.Name = "cmbPacientes";
             this.cmbPacientes.Size = new System.Drawing.Size(86, 21);
             this.cmbPacientes.TabIndex = 10;
@@ -152,7 +132,7 @@ namespace Sistema_Clinica
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(759, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(841, 12);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(49, 52);
             this.pictureBox6.TabIndex = 11;
@@ -195,9 +175,8 @@ namespace Sistema_Clinica
             this.cmbCatSign.FormattingEnabled = true;
             this.cmbCatSign.Items.AddRange(new object[] {
             "Crear Signo",
-            "Habilitar Signo",
-            "Deshabilitar Signo"});
-            this.cmbCatSign.Location = new System.Drawing.Point(729, 79);
+            "Actualizar Signo"});
+            this.cmbCatSign.Location = new System.Drawing.Point(811, 81);
             this.cmbCatSign.Name = "cmbCatSign";
             this.cmbCatSign.Size = new System.Drawing.Size(116, 21);
             this.cmbCatSign.TabIndex = 14;
@@ -211,18 +190,29 @@ namespace Sistema_Clinica
             this.label1.Location = new System.Drawing.Point(15, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 15;
+            this.label1.TabIndex = 30;
             this.label1.Text = "Usuarios";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(190, 85);
+            this.label2.Location = new System.Drawing.Point(284, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Pacientes";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(814, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Catalogo de signos";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // frmPrincipal
             // 
@@ -230,6 +220,7 @@ namespace Sistema_Clinica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1190, 617);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCatSign);
@@ -237,8 +228,6 @@ namespace Sistema_Clinica
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.cmbPacientes);
             this.Controls.Add(this.cmbUsuarios);
-            this.Controls.Add(this.btnEva);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -255,7 +244,6 @@ namespace Sistema_Clinica
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.grpUsu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -270,8 +258,6 @@ namespace Sistema_Clinica
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnConsulta;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button btnEva;
         private System.Windows.Forms.ComboBox cmbUsuarios;
         private System.Windows.Forms.ComboBox cmbPacientes;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -281,5 +267,6 @@ namespace Sistema_Clinica
         private System.Windows.Forms.ComboBox cmbCatSign;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

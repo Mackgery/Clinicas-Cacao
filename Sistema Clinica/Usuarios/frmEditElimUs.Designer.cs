@@ -43,12 +43,16 @@ namespace Sistema_Clinica
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.dtgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.lblmod = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtContra = new System.Windows.Forms.TextBox();
             this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lblBuscar = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
@@ -61,13 +65,15 @@ namespace Sistema_Clinica
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(91, 28);
-            this.btnRegresar.TabIndex = 23;
+            this.btnRegresar.TabIndex = 6;
             this.btnRegresar.Text = "Cancelar";
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtContra);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.txtNombres);
             this.groupBox1.Controls.Add(this.txtApellidos);
@@ -77,15 +83,16 @@ namespace Sistema_Clinica
             this.groupBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(554, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(339, 206);
+            this.groupBox1.Size = new System.Drawing.Size(339, 254);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Usuario";
             // 
             // txtUsuario
             // 
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(97, 165);
+            this.txtUsuario.Location = new System.Drawing.Point(125, 148);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(196, 23);
@@ -96,7 +103,7 @@ namespace Sistema_Clinica
             // txtNombres
             // 
             this.txtNombres.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(97, 28);
+            this.txtNombres.Location = new System.Drawing.Point(125, 28);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(196, 23);
@@ -107,7 +114,7 @@ namespace Sistema_Clinica
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(98, 93);
+            this.txtApellidos.Location = new System.Drawing.Point(125, 88);
             this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(196, 23);
@@ -129,7 +136,7 @@ namespace Sistema_Clinica
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 96);
+            this.label2.Location = new System.Drawing.Point(25, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
@@ -140,7 +147,7 @@ namespace Sistema_Clinica
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 168);
+            this.label3.Location = new System.Drawing.Point(25, 151);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
@@ -152,7 +159,7 @@ namespace Sistema_Clinica
             this.txtBuscar.Location = new System.Drawing.Point(58, 43);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(249, 20);
-            this.txtBuscar.TabIndex = 21;
+            this.txtBuscar.TabIndex = 7;
             // 
             // btnBuscar
             // 
@@ -161,7 +168,7 @@ namespace Sistema_Clinica
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(64, 23);
-            this.btnBuscar.TabIndex = 20;
+            this.btnBuscar.TabIndex = 8;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -174,7 +181,7 @@ namespace Sistema_Clinica
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(91, 28);
-            this.btnEliminar.TabIndex = 19;
+            this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -186,7 +193,7 @@ namespace Sistema_Clinica
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(91, 28);
-            this.btnEditar.TabIndex = 18;
+            this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Modificar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -209,8 +216,68 @@ namespace Sistema_Clinica
             this.dtgvUsuarios.Size = new System.Drawing.Size(497, 303);
             this.dtgvUsuarios.TabIndex = 17;
             this.dtgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvUsuarios_CellContentClick);
+            this.dtgvUsuarios.DoubleClick += new System.EventHandler(this.dtgvUsuarios_DoubleClick);
             this.dtgvUsuarios.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtgvUsuarios_KeyDown);
             this.dtgvUsuarios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dtgvUsuarios_KeyPress);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Location = new System.Drawing.Point(12, 46);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(40, 13);
+            this.lblBuscar.TabIndex = 24;
+            this.lblBuscar.Text = "Buscar";
+            // 
+            // lblmod
+            // 
+            this.lblmod.AutoSize = true;
+            this.lblmod.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
+            this.lblmod.Location = new System.Drawing.Point(83, 405);
+            this.lblmod.Name = "lblmod";
+            this.lblmod.Size = new System.Drawing.Size(365, 16);
+            this.lblmod.TabIndex = 25;
+            this.lblmod.Text = "Para modificar un usuario presione doble click sobre el\r\n";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 405);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 16);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Nota :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(25, 211);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Contraseña";
+            // 
+            // txtContra
+            // 
+            this.txtContra.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtContra.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContra.Location = new System.Drawing.Point(125, 208);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '•';
+            this.txtContra.Size = new System.Drawing.Size(196, 23);
+            this.txtContra.TabIndex = 8;
             // 
             // nombresDataGridViewTextBoxColumn
             // 
@@ -236,32 +303,17 @@ namespace Sistema_Clinica
             this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
             this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
             // usuariosBindingSource
             // 
             this.usuariosBindingSource.DataSource = typeof(Sistema_Clinica.Usuarios);
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(12, 46);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(40, 13);
-            this.lblBuscar.TabIndex = 24;
-            this.lblBuscar.Text = "Buscar";
             // 
             // frmEditElimUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 430);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblmod);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.groupBox1);
@@ -303,5 +355,9 @@ namespace Sistema_Clinica
         public System.Windows.Forms.TextBox txtApellidos;
         public System.Windows.Forms.Button btnEliminar;
         public System.Windows.Forms.Button btnEditar;
+        public System.Windows.Forms.Label lblmod;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txtContra;
+        private System.Windows.Forms.Label label4;
     }
 }

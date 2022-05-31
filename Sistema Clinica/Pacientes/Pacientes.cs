@@ -9,8 +9,8 @@ namespace Sistema_Clinica
     class Pacientes
     {
         int id, iduscrea, idusmod;
-        string nombres, apellidos, DPI, sexo, telefono, celular, tipo_sangre, alergias, nacimiento;
-        int estado;
+        string nombres, apellidos, DPI, sexo, telefono, celular, tipo_sangre, alergias, nacimiento, dpicom;
+        int estado, codigo;
 
         public int Id { get => id; set => id = value; }
         public string Nombres { get => nombres; set => nombres = value; }
@@ -25,5 +25,7 @@ namespace Sistema_Clinica
         public int Iduscrea { get => iduscrea; set => iduscrea = value; }
         public int Idusmod { get => idusmod; set => idusmod = value; }
         public int Estado { get => estado; set => estado = value; }
+        public int Codigo { get => codigo; set => codigo = value; }
+        public string Dpicom { get => dpicom; set => dpicom = value; }
     }
 }

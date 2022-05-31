@@ -56,7 +56,7 @@ namespace Sistema_Clinica
             this.label1.Location = new System.Drawing.Point(186, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Usuario";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -67,11 +67,12 @@ namespace Sistema_Clinica
             this.label2.Location = new System.Drawing.Point(186, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Contraseña";
             // 
             // txtUsuario
             // 
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(296, 34);
             this.txtUsuario.Name = "txtUsuario";
@@ -96,7 +97,7 @@ namespace Sistema_Clinica
             this.btnCancelar.Location = new System.Drawing.Point(321, 141);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -107,7 +108,7 @@ namespace Sistema_Clinica
             this.btnEntrar.Location = new System.Drawing.Point(194, 141);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
-            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);

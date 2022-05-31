@@ -40,11 +40,17 @@ namespace Sistema_Clinica
             this.label3 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.lblPaciente = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnRe = new System.Windows.Forms.Button();
+            this.btnActSigno = new System.Windows.Forms.Button();
+            this.txtsigno = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtsigno);
             this.groupBox1.Controls.Add(this.cmbSignos);
             this.groupBox1.Controls.Add(this.txtValor2);
             this.groupBox1.Controls.Add(this.txtValor1);
@@ -54,10 +60,10 @@ namespace Sistema_Clinica
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(29, 26);
+            this.groupBox1.Location = new System.Drawing.Point(29, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(344, 281);
-            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Signos Vitales";
             // 
@@ -68,8 +74,8 @@ namespace Sistema_Clinica
             this.cmbSignos.Location = new System.Drawing.Point(168, 31);
             this.cmbSignos.Name = "cmbSignos";
             this.cmbSignos.Size = new System.Drawing.Size(131, 23);
-            this.cmbSignos.TabIndex = 9;
-            this.cmbSignos.SelectedIndexChanged += new System.EventHandler(this.cmbSignos_SelectedIndexChanged);
+            this.cmbSignos.TabIndex = 1;
+            this.cmbSignos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbSignos_KeyDown);
             // 
             // txtValor2
             // 
@@ -78,7 +84,8 @@ namespace Sistema_Clinica
             this.txtValor2.Margin = new System.Windows.Forms.Padding(4);
             this.txtValor2.Name = "txtValor2";
             this.txtValor2.Size = new System.Drawing.Size(131, 23);
-            this.txtValor2.TabIndex = 2;
+            this.txtValor2.TabIndex = 3;
+            this.txtValor2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtValor2_KeyDown);
             // 
             // txtValor1
             // 
@@ -87,7 +94,8 @@ namespace Sistema_Clinica
             this.txtValor1.Margin = new System.Windows.Forms.Padding(4);
             this.txtValor1.Name = "txtValor1";
             this.txtValor1.Size = new System.Drawing.Size(131, 23);
-            this.txtValor1.TabIndex = 1;
+            this.txtValor1.TabIndex = 2;
+            this.txtValor1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtValor1_KeyDown);
             // 
             // txtObservacion
             // 
@@ -97,7 +105,8 @@ namespace Sistema_Clinica
             this.txtObservacion.Multiline = true;
             this.txtObservacion.Name = "txtObservacion";
             this.txtObservacion.Size = new System.Drawing.Size(131, 44);
-            this.txtObservacion.TabIndex = 3;
+            this.txtObservacion.TabIndex = 4;
+            this.txtObservacion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtObservacion_KeyDown);
             // 
             // label1
             // 
@@ -146,7 +155,7 @@ namespace Sistema_Clinica
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(228, 327);
+            this.btnGuardar.Location = new System.Drawing.Point(69, 378);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 28);
@@ -158,7 +167,7 @@ namespace Sistema_Clinica
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(75, 327);
+            this.btnRegresar.Location = new System.Drawing.Point(228, 378);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 28);
@@ -167,37 +176,100 @@ namespace Sistema_Clinica
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // lblPaciente
+            // 
+            this.lblPaciente.AutoSize = true;
+            this.lblPaciente.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
+            this.lblPaciente.Location = new System.Drawing.Point(149, 32);
+            this.lblPaciente.Name = "lblPaciente";
+            this.lblPaciente.Size = new System.Drawing.Size(0, 16);
+            this.lblPaciente.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(37, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 16);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Paciente: ";
+            // 
+            // btnRe
+            // 
+            this.btnRe.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRe.Location = new System.Drawing.Point(228, 342);
+            this.btnRe.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRe.Name = "btnRe";
+            this.btnRe.Size = new System.Drawing.Size(100, 28);
+            this.btnRe.TabIndex = 20;
+            this.btnRe.Text = "Regresar";
+            this.btnRe.UseVisualStyleBackColor = true;
+            this.btnRe.Click += new System.EventHandler(this.btnRe_Click);
+            // 
+            // btnActSigno
+            // 
+            this.btnActSigno.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActSigno.Location = new System.Drawing.Point(69, 342);
+            this.btnActSigno.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActSigno.Name = "btnActSigno";
+            this.btnActSigno.Size = new System.Drawing.Size(100, 28);
+            this.btnActSigno.TabIndex = 21;
+            this.btnActSigno.Text = "Actualizar";
+            this.btnActSigno.UseVisualStyleBackColor = true;
+            this.btnActSigno.Click += new System.EventHandler(this.btnActSigno_Click);
+            // 
+            // txtsigno
+            // 
+            this.txtsigno.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsigno.Location = new System.Drawing.Point(168, 62);
+            this.txtsigno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsigno.Name = "txtsigno";
+            this.txtsigno.Size = new System.Drawing.Size(131, 23);
+            this.txtsigno.TabIndex = 8;
+            // 
             // frmSignos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(399, 372);
+            this.ClientSize = new System.Drawing.Size(409, 423);
+            this.Controls.Add(this.btnActSigno);
+            this.Controls.Add(this.btnRe);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblPaciente);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnGuardar);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmSignos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSignos";
+            this.Text = "Signos Vitales";
+            this.Load += new System.EventHandler(this.frmSignos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtValor2;
-        private System.Windows.Forms.TextBox txtValor1;
-        private System.Windows.Forms.TextBox txtObservacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.ComboBox cmbSignos;
+        public System.Windows.Forms.Label lblPaciente;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button btnRe;
+        public System.Windows.Forms.Button btnRegresar;
+        public System.Windows.Forms.Button btnActSigno;
+        public System.Windows.Forms.TextBox txtsigno;
+        public System.Windows.Forms.TextBox txtValor2;
+        public System.Windows.Forms.TextBox txtValor1;
+        public System.Windows.Forms.TextBox txtObservacion;
+        public System.Windows.Forms.Button btnGuardar;
+        public System.Windows.Forms.ComboBox cmbSignos;
     }
 }

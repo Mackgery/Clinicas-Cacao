@@ -30,6 +30,7 @@ namespace Sistema_Clinica
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtMedida = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@ namespace Sistema_Clinica
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,9 +53,19 @@ namespace Sistema_Clinica
             this.groupBox1.Location = new System.Drawing.Point(28, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(344, 210);
-            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Signo";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(168, 31);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(131, 23);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyDown);
             // 
             // txtMedida
             // 
@@ -64,7 +74,8 @@ namespace Sistema_Clinica
             this.txtMedida.Margin = new System.Windows.Forms.Padding(4);
             this.txtMedida.Name = "txtMedida";
             this.txtMedida.Size = new System.Drawing.Size(131, 23);
-            this.txtMedida.TabIndex = 2;
+            this.txtMedida.TabIndex = 3;
+            this.txtMedida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedida_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -74,11 +85,13 @@ namespace Sistema_Clinica
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(131, 60);
-            this.txtDescripcion.TabIndex = 1;
+            this.txtDescripcion.TabIndex = 2;
+            this.txtDescripcion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDescripcion_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -112,11 +125,11 @@ namespace Sistema_Clinica
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(68, 248);
+            this.btnRegresar.Location = new System.Drawing.Point(227, 248);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(100, 28);
-            this.btnRegresar.TabIndex = 19;
+            this.btnRegresar.TabIndex = 5;
             this.btnRegresar.Text = "Cancelar";
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
@@ -124,23 +137,14 @@ namespace Sistema_Clinica
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(227, 248);
+            this.btnGuardar.Location = new System.Drawing.Point(56, 248);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 28);
-            this.btnGuardar.TabIndex = 18;
+            this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(168, 31);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(131, 23);
-            this.txtNombre.TabIndex = 8;
             // 
             // frmNuevoSigno
             // 
@@ -152,7 +156,8 @@ namespace Sistema_Clinica
             this.Controls.Add(this.btnGuardar);
             this.Name = "frmNuevoSigno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNuevoSigno";
+            this.Text = "Nuevo Signo";
+            this.Load += new System.EventHandler(this.frmNuevoSigno_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

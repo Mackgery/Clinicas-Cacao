@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema Clinica", "Sistema Clinica\Sistema Clinica.csproj", "{AF268D14-DF60-44B3-A7BE-B45696800C58}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstaladorClinicas", "InstaladorClinicas\InstaladorClinicas.vdproj", "{CC8F3A9F-6C51-4312-AF2F-379C4024D88A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{AF268D14-DF60-44B3-A7BE-B45696800C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF268D14-DF60-44B3-A7BE-B45696800C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF268D14-DF60-44B3-A7BE-B45696800C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8F3A9F-6C51-4312-AF2F-379C4024D88A}.Debug|Any CPU.ActiveCfg = Debug
+		{CC8F3A9F-6C51-4312-AF2F-379C4024D88A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

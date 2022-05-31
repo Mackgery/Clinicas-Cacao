@@ -1,0 +1,31 @@
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\Sistema Clinica.exe.config
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\Sistema Clinica.exe
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\Sistema Clinica.pdb
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\MySql.Data.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\Google.Protobuf.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Release\MySql.Data.xml
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmCalendario.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmEvaluacion.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmImpresion.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmPacientes.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmCatalogoSig.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmConsulta.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmContra.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmEditElim.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmEditElimPac.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmLogin.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmNuevoSigno.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmPacientesCRUD.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmPrincipal.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmEditElimUs.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmSignos.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmUsuariosCRUD.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.Properties.Resources.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.GenerateResource.cache
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.CopyComplete
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.exe
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.pdb
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.AssemblyReference.cache
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmConsulta2.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmSignoev.resources
