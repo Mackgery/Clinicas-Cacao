@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InformeEva" targetNamespace="http://tempuri.org/InformeEva.xsd" xmlns:mstns="http://tempuri.org/InformeEva.xsd" xmlns="http://tempuri.org/InformeEva.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InformeEva" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InformeEva" msprop:Generator_UserDSName="InformeEva">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_eva" msprop:Generator_ColumnVarNameInTable="columnID_eva" msprop:Generator_ColumnPropNameInRow="ID_eva" msprop:Generator_ColumnPropNameInTable="ID_evaColumn" msprop:Generator_UserColumnName="ID_eva" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_area" msprop:Generator_ColumnVarNameInTable="columnID_area" msprop:Generator_ColumnPropNameInRow="ID_area" msprop:Generator_ColumnPropNameInTable="ID_areaColumn" msprop:Generator_UserColumnName="ID_area" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_consulta" msprop:Generator_ColumnVarNameInTable="columnID_consulta" msprop:Generator_ColumnPropNameInRow="ID_consulta" msprop:Generator_ColumnPropNameInTable="ID_consultaColumn" msprop:Generator_UserColumnName="ID_consulta" type="xs:string" minOccurs="0" />
+              <xs:element name="evaluacion" msprop:Generator_ColumnVarNameInTable="columnevaluacion" msprop:Generator_ColumnPropNameInRow="evaluacion" msprop:Generator_ColumnPropNameInTable="evaluacionColumn" msprop:Generator_UserColumnName="evaluacion" type="xs:string" minOccurs="0" />
+              <xs:element name="laboratorios" msprop:Generator_ColumnVarNameInTable="columnlaboratorios" msprop:Generator_ColumnPropNameInRow="laboratorios" msprop:Generator_ColumnPropNameInTable="laboratoriosColumn" msprop:Generator_UserColumnName="laboratorios" type="xs:string" minOccurs="0" />
+              <xs:element name="receta" msprop:Generator_ColumnVarNameInTable="columnreceta" msprop:Generator_ColumnPropNameInRow="receta" msprop:Generator_ColumnPropNameInTable="recetaColumn" msprop:Generator_UserColumnName="receta" type="xs:string" minOccurs="0" />
+              <xs:element name="Completo" msprop:Generator_ColumnVarNameInTable="columnCompleto" msprop:Generator_ColumnPropNameInRow="Completo" msprop:Generator_ColumnPropNameInTable="CompletoColumn" msprop:Generator_UserColumnName="Completo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

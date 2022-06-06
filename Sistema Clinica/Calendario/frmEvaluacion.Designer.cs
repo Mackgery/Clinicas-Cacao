@@ -170,7 +170,7 @@ namespace Sistema_Clinica
             this.btnImpL.Name = "btnImpL";
             this.btnImpL.Size = new System.Drawing.Size(100, 46);
             this.btnImpL.TabIndex = 11;
-            this.btnImpL.Text = "Imprimir Laboratorios";
+            this.btnImpL.Text = "Imprimir Evaluacion";
             this.btnImpL.UseVisualStyleBackColor = true;
             this.btnImpL.Click += new System.EventHandler(this.btnImpL_Click);
             // 

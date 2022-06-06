@@ -157,26 +157,29 @@ namespace Sistema_Clinica
                         DialogResult r = MessageBox.Show("Signo registrado correctamete ¿Desea añadir otro signo a esta consulta?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if (r == DialogResult.Yes)
                         {
-                            MySqlConnection conexion = Conexion.GetConnection();
-                            conexion.Open();
-                            string sql2 = "UPDATE catalogo_signos SET visibilidad = 0 WHERE id_sign = '" + signo.Id_signo + "'";
+                            /*    MySqlConnection conexion = Conexion.GetConnection();
+                                conexion.Open();
+                                string sql2 = "UPDATE catalogo_signos SET visibilidad = 0 WHERE id_sign = '" + signo.Id_signo + "'";
+                                limpiar();
+                                MySqlCommand comando = new MySqlCommand(sql2, conexion);
+                                comando.ExecuteNonQuery();
+                                cargarSignos();*/
                             limpiar();
-                            MySqlCommand comando = new MySqlCommand(sql2, conexion);
-                            comando.ExecuteNonQuery();
                             cargarSignos();
+
                         }
                         else
                         {
-                            frmPrincipal frm = new frmPrincipal();
+                            /*frmPrincipal frm = new frmPrincipal();
                             frm.Visible = true;
                             this.Visible = false;
                             MySqlConnection conexion = Conexion.GetConnection();
                             conexion.Open();
                             string sql2 = "UPDATE catalogo_signos SET visibilidad = 1 WHERE estado = 1";
                             MySqlCommand comando = new MySqlCommand(sql2, conexion);
-                            comando.ExecuteNonQuery();
+                            comando.ExecuteNonQuery();*/
+                            this.Visible = false;
                         }
-                        // MessageBox.Show("Signo registrado correctamete", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)

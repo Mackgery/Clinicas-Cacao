@@ -22,6 +22,8 @@ namespace Sistema_Clinica
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+       //     navbar nav = new navbar();
+         //   nav.form = 1;
             cmbUsuarios.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPacientes.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCatSign.DropDownStyle = ComboBoxStyle.DropDownList;

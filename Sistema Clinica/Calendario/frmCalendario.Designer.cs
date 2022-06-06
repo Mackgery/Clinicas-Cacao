@@ -46,6 +46,7 @@ namespace Sistema_Clinica
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.lblmod = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,21 +56,23 @@ namespace Sistema_Clinica
             this.motivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.navbar1 = new Sistema_Clinica.navbar();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConsultas)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consultaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbEstado
             // 
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(437, 34);
+            this.cmbEstado.Location = new System.Drawing.Point(427, 30);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 1;
             // 
             // btnNConsulta
             // 
-            this.btnNConsulta.Location = new System.Drawing.Point(710, 68);
+            this.btnNConsulta.Location = new System.Drawing.Point(700, 64);
             this.btnNConsulta.Name = "btnNConsulta";
             this.btnNConsulta.Size = new System.Drawing.Size(155, 36);
             this.btnNConsulta.TabIndex = 3;
@@ -81,7 +84,7 @@ namespace Sistema_Clinica
             // 
             this.lblPaciente.AutoSize = true;
             this.lblPaciente.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblPaciente.Location = new System.Drawing.Point(707, 32);
+            this.lblPaciente.Location = new System.Drawing.Point(697, 28);
             this.lblPaciente.Name = "lblPaciente";
             this.lblPaciente.Size = new System.Drawing.Size(158, 16);
             this.lblPaciente.TabIndex = 4;
@@ -89,7 +92,7 @@ namespace Sistema_Clinica
             // 
             // btnElimC
             // 
-            this.btnElimC.Location = new System.Drawing.Point(710, 295);
+            this.btnElimC.Location = new System.Drawing.Point(700, 291);
             this.btnElimC.Name = "btnElimC";
             this.btnElimC.Size = new System.Drawing.Size(155, 36);
             this.btnElimC.TabIndex = 5;
@@ -99,7 +102,7 @@ namespace Sistema_Clinica
             // 
             // btnEConsulta
             // 
-            this.btnEConsulta.Location = new System.Drawing.Point(710, 143);
+            this.btnEConsulta.Location = new System.Drawing.Point(700, 139);
             this.btnEConsulta.Name = "btnEConsulta";
             this.btnEConsulta.Size = new System.Drawing.Size(155, 36);
             this.btnEConsulta.TabIndex = 6;
@@ -109,7 +112,7 @@ namespace Sistema_Clinica
             // 
             // btnEva
             // 
-            this.btnEva.Location = new System.Drawing.Point(710, 218);
+            this.btnEva.Location = new System.Drawing.Point(700, 214);
             this.btnEva.Name = "btnEva";
             this.btnEva.Size = new System.Drawing.Size(155, 36);
             this.btnEva.TabIndex = 7;
@@ -121,7 +124,7 @@ namespace Sistema_Clinica
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.Location = new System.Drawing.Point(24, 32);
+            this.label2.Location = new System.Drawing.Point(14, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 16);
             this.label2.TabIndex = 8;
@@ -145,7 +148,7 @@ namespace Sistema_Clinica
             this.estadoDataGridViewTextBoxColumn,
             this.Fecha_sig});
             this.dtgvConsultas.DataSource = this.consultaBindingSource;
-            this.dtgvConsultas.Location = new System.Drawing.Point(27, 68);
+            this.dtgvConsultas.Location = new System.Drawing.Point(17, 64);
             this.dtgvConsultas.Name = "dtgvConsultas";
             this.dtgvConsultas.ReadOnly = true;
             this.dtgvConsultas.Size = new System.Drawing.Size(621, 337);
@@ -172,7 +175,7 @@ namespace Sistema_Clinica
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(584, 33);
+            this.btnBuscar.Location = new System.Drawing.Point(574, 29);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(64, 23);
@@ -186,7 +189,7 @@ namespace Sistema_Clinica
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblCodigo.Location = new System.Drawing.Point(707, 16);
+            this.lblCodigo.Location = new System.Drawing.Point(697, 12);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(58, 16);
             this.lblCodigo.TabIndex = 30;
@@ -195,14 +198,14 @@ namespace Sistema_Clinica
             // dtmFecha
             // 
             this.dtmFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtmFecha.Location = new System.Drawing.Point(79, 33);
+            this.dtmFecha.Location = new System.Drawing.Point(69, 29);
             this.dtmFecha.Name = "dtmFecha";
             this.dtmFecha.Size = new System.Drawing.Size(81, 20);
             this.dtmFecha.TabIndex = 31;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(710, 368);
+            this.btnRegresar.Location = new System.Drawing.Point(700, 364);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(155, 36);
             this.btnRegresar.TabIndex = 32;
@@ -214,7 +217,7 @@ namespace Sistema_Clinica
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(25, 420);
+            this.label10.Location = new System.Drawing.Point(15, 416);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 16);
             this.label10.TabIndex = 34;
@@ -224,11 +227,35 @@ namespace Sistema_Clinica
             // 
             this.lblmod.AutoSize = true;
             this.lblmod.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F);
-            this.lblmod.Location = new System.Drawing.Point(87, 420);
+            this.lblmod.Location = new System.Drawing.Point(77, 416);
             this.lblmod.Name = "lblmod";
             this.lblmod.Size = new System.Drawing.Size(395, 16);
             this.lblmod.TabIndex = 33;
             this.lblmod.Text = "Para seleccionar un paciente  presione doble click sobre el";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.dtgvConsultas);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.cmbEstado);
+            this.panel1.Controls.Add(this.lblmod);
+            this.panel1.Controls.Add(this.btnNConsulta);
+            this.panel1.Controls.Add(this.btnRegresar);
+            this.panel1.Controls.Add(this.lblPaciente);
+            this.panel1.Controls.Add(this.dtmFecha);
+            this.panel1.Controls.Add(this.btnElimC);
+            this.panel1.Controls.Add(this.lblCodigo);
+            this.panel1.Controls.Add(this.btnEConsulta);
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.btnEva);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(12, 145);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(906, 475);
+            this.panel1.TabIndex = 35;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -304,33 +331,32 @@ namespace Sistema_Clinica
             // 
             this.consultaBindingSource.DataSource = typeof(Sistema_Clinica.Consulta);
             // 
+            // navbar1
+            // 
+            this.navbar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.navbar1.Location = new System.Drawing.Point(-2, -7);
+            this.navbar1.Name = "navbar1";
+            this.navbar1.Size = new System.Drawing.Size(1350, 146);
+            this.navbar1.TabIndex = 36;
+            // 
             // frmCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(951, 445);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.lblmod);
-            this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.dtmFecha);
-            this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnEva);
-            this.Controls.Add(this.btnEConsulta);
-            this.Controls.Add(this.btnElimC);
-            this.Controls.Add(this.lblPaciente);
-            this.Controls.Add(this.btnNConsulta);
-            this.Controls.Add(this.dtgvConsultas);
-            this.Controls.Add(this.cmbEstado);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1346, 628);
+            this.Controls.Add(this.navbar1);
+            this.Controls.Add(this.panel1);
             this.Name = "frmCalendario";
             this.Text = "Calendario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCalendario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConsultas)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consultaBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -360,5 +386,7 @@ namespace Sistema_Clinica
         public System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label lblmod;
+        private System.Windows.Forms.Panel panel1;
+        private navbar navbar1;
     }
 }

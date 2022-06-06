@@ -58,7 +58,7 @@ namespace Sistema_Clinica
             frm.lblCodigo.Visible = false;
             frm.lblCodi.Visible = false;
             frm.txtPaciente.Visible = false;
-            frm.txtNomProv.Location = new Point(177, 74);
+            frm.txtNomProv.Location = new Point(287, 75);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -147,12 +147,12 @@ namespace Sistema_Clinica
                             string codigo = reader2[10].ToString();
                             if (string.IsNullOrEmpty(nombre))
                             {
-                                frm.textBox1.Text = "Nombre provisional: " + nombreprov + "\r\n" + "Motivo: " + motivo + "Prueba " + dato;
+                                frm.textBox1.Text = "Nombre provisional: " + nombreprov + "\r\n" + "Motivo: " + motivo;
                                 frm.id_cons = dato;
                             }
                             else
                             {
-                                frm.textBox1.Text = "Codigo: " + codigo + "\r\n" + "Nombre: " + nombre + " " + apellidos + "\r\n" + "Fecha de Nacimiento: " + fechanac + "\r\n" + "Alergias: " + alergias + "\r\n" + "Tipo de sangre " + tiposan + "\r\n" + "Motivo: " + motivo + "Prueba " + dato;
+                                frm.textBox1.Text = "Codigo: " + codigo + "\r\n" + "Nombre: " + nombre + " " + apellidos + "\r\n" + "Fecha de Nacimiento: " + fechanac + "\r\n" + "Alergias: " + alergias + "\r\n" + "Tipo de sangre " + tiposan + "\r\n" + "Motivo: " + motivo;
                                 frm.id_cons = dato;
                             }
                         }
@@ -248,13 +248,13 @@ namespace Sistema_Clinica
                 }
                 if (string.IsNullOrEmpty(Evaluacion.nombre))
                 {
-                    frm.textBox1.Text = "Nombre provisional: " + Evaluacion.nombreprov + "\r\n" + "Motivo: " + Evaluacion.motivo + "Prueba " + dato;
+                    frm.textBox1.Text = "Nombre provisional: " + Evaluacion.nombreprov + "\r\n" + "Motivo: " + Evaluacion.motivo;
                     frm.id_cons = dato;
                     Consulta.id_cons = dato;
                 }
                 else
                 {
-                    frm.textBox1.Text = "Codigo: " + Evaluacion.codigo + "\r\n" + "Nombre: " + Evaluacion.nombre + " " + Evaluacion.apellidos + "\r\n" + "Fecha de Nacimiento: " + Evaluacion.fechanac + "\r\n" + "Alergias: " + Evaluacion.alergias + "\r\n" + "Motivo: " + Evaluacion.motivo + "Prueba " + dato;
+                    frm.textBox1.Text = "Codigo: " + Evaluacion.codigo + "\r\n" + "Nombre: " + Evaluacion.nombre + " " + Evaluacion.apellidos + "\r\n" + "Fecha de Nacimiento: " + Evaluacion.fechanac + "\r\n" + "Alergias: " + Evaluacion.alergias + "\r\n" + "Motivo: " + Evaluacion.motivo;
                     frm.id_cons = dato;
                     Consulta.id_cons = dato;
                 }
@@ -392,11 +392,10 @@ namespace Sistema_Clinica
                 frm.Visible = true;
                 this.Visible = false;
                 frm.btnGuardar.Visible = false;
-                frm.btnGuardar.Location = new Point(500, 0);
                 frm.btnEditar.Visible = true;
-                frm.btnEditar.Location = new Point(221, 507);
+               // frm.btnEditar.Location = new Point(316, 705);
                 frm.txtPaciente.Visible = false;
-                frm.txtNomProv.Location = new Point(177, 74);
+                frm.txtNomProv.Location = new Point(287, 75);
                 Consulta.id_cons = int.Parse(dtgvConsultas.CurrentRow.Cells[0].Value.ToString());
 
             }
@@ -420,7 +419,7 @@ namespace Sistema_Clinica
                 this.Visible = false;
                 frm.btnGuardar.Visible = false;
                 frm.btnEditar.Visible = true;
-                frm.btnEditar.Location = new Point(216, 507);
+                //frm.btnEditar.Location = new Point(316, 705);
                 Consulta.id_cons = int.Parse(dtgvConsultas.CurrentRow.Cells[0].Value.ToString());
             }
             Consulta.id = int.Parse(dtgvConsultas.CurrentRow.Cells[0].Value.ToString());

@@ -26,6 +26,8 @@ C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Siste
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.CopyComplete
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.exe
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.pdb
-C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.AssemblyReference.cache
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmConsulta2.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema_Clinica.frmSignoev.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\RdlCompile.cache
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\RdlCompile.compiled
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Release\Sistema Clinica.csproj.AssemblyReference.cache

@@ -31,7 +31,6 @@ namespace Sistema_Clinica
         {
             id_cons = Consulta.id_cons;
             txtEvaluacion.Focus();
-            txtEvaluacion.Text = id_cons.ToString();
         }
 
        
@@ -122,16 +121,12 @@ namespace Sistema_Clinica
         private void btnImpR_Click(object sender, EventArgs e)
         {
             frmImpresion frm = new frmImpresion();
-            frm.lbltitulo.Text = "Receta";
-            frm.txtContenido.Text = txtReceta.Text;
-            frm.imprimir();
+            frm.Visible = true;
         }
 
         private void btnImpL_Click(object sender, EventArgs e)
         {
-            frmImpresion frm = new frmImpresion();
-            frm.lbltitulo.Text = "Laboratorios";
-            frm.txtContenido.Text = txtLaboratorios.Text;
+            frmImpresionEva frm = new frmImpresionEva();
             frm.Visible = true;
         }
 
@@ -155,48 +150,51 @@ namespace Sistema_Clinica
 
         private void txtReceta_KeyDown(object sender, KeyEventArgs e)
         {
-            int valor = 0;
-            EvaDatos evaluacion = new EvaDatos();
-            evaluacion.Id_consulta = id_cons;
-            evaluacion.Evaluacion = txtEvaluacion.Text;
-            evaluacion.Laboratorios = txtLaboratorios.Text;
-            evaluacion.Receta = txtReceta.Text;
-            try
+            if (e.KeyCode == Keys.Enter)
             {
-                Controlador control = new Controlador();
-                string respuesta = control.ctrlregistroEvaluacion(evaluacion);
-                if (respuesta.Length > 0)
+                int valor = 0;
+                EvaDatos evaluacion = new EvaDatos();
+                evaluacion.Id_consulta = id_cons;
+                evaluacion.Evaluacion = txtEvaluacion.Text;
+                evaluacion.Laboratorios = txtLaboratorios.Text;
+                evaluacion.Receta = txtReceta.Text;
+                try
                 {
-                    MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    valor = 0;
+                    Controlador control = new Controlador();
+                    string respuesta = control.ctrlregistroEvaluacion(evaluacion);
+                    if (respuesta.Length > 0)
+                    {
+                        MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        valor = 0;
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Evaluacion registrada correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        valor = 1;
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Evaluacion registrada correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    valor = 1;
+                    MessageBox.Show(ex.Message);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            if (valor == 1)
-            {
-                btnEditar.Visible = true;
-                btnImpL.Visible = true;
-                btnImpR.Visible = true;
-                btnEditar.Location = new Point(189, 438);
-                btnImpL.Location = new Point(267, 481);
-                btnImpR.Location = new Point(105, 481);
-                btnGuardar.Location = new Point(20, 438);
-                btnRegresar.Location = new Point(356, 438);
-                btnGuardar.Visible = false;
-                txtEvaluacion.Enabled = false;
-                txtLaboratorios.Enabled = false;
-                txtReceta.Enabled = false;
-                btnhab.Visible = true;
-                btnhab.Location = new Point(20, 438);
+                if (valor == 1)
+                {
+                    btnEditar.Visible = true;
+                    btnImpL.Visible = true;
+                    btnImpR.Visible = true;
+                    btnEditar.Location = new Point(189, 438);
+                    btnImpL.Location = new Point(267, 481);
+                    btnImpR.Location = new Point(105, 481);
+                    btnGuardar.Location = new Point(20, 438);
+                    btnRegresar.Location = new Point(356, 438);
+                    btnGuardar.Visible = false;
+                    txtEvaluacion.Enabled = false;
+                    txtLaboratorios.Enabled = false;
+                    txtReceta.Enabled = false;
+                    btnhab.Visible = true;
+                    btnhab.Location = new Point(20, 438);
+                }
             }
         }
 

@@ -1,7 +1,6 @@
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.exe.config
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.exe
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.pdb
-C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.AssemblyReference.cache
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.Properties.Resources.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.GenerateResource.cache
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.CoreCompileInputs.cache
@@ -29,3 +28,151 @@ C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmImpresion.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmConsulta2.resources
 C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmSignoev.resources
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\EnvDTE.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\stdole.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\RdlCompile.cache
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\RdlCompile.compiled
+C:\Users\Mackgery\source\repos\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.navbar.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.exe.config
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.exe
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Sistema Clinica.pdb
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\MySql.Data.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\EnvDTE.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Google.Protobuf.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\stdole.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\MySql.Data.xml
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmCalendario.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmConsulta2.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEvaluacion.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmImpresion.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmSignoev.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmPacientes.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmCatalogoSig.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmConsulta.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmContra.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEditElim.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEditElimPac.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmLogin.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmNuevoSigno.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmPacientesCRUD.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmPrincipal.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmEditElimUs.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmSignos.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmUsuariosCRUD.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.Properties.Resources.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.GenerateResource.cache
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\RdlCompile.cache
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\RdlCompile.compiled
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.CopyComplete
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.exe
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.pdb
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.navbar.resources
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Dapper.dll
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\bin\Debug\Dapper.xml
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema Clinica.csproj.AssemblyReference.cache
+C:\Users\Mackgery\Desktop\Sistema Clinica\Sistema Clinica\obj\Debug\Sistema_Clinica.frmImpresionEva.resources

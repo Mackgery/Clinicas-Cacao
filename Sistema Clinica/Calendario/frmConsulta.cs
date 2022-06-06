@@ -190,6 +190,9 @@ namespace Sistema_Clinica
                         frm.btnActSigno.Visible = false;
                         frm.btnRe.Visible = false;
                         this.Visible = false;
+                        frmPrincipal frm2 = new frmPrincipal();
+                        frm2.Visible = true;
+                        this.Visible = false;
                         if (string.IsNullOrEmpty(cons.Nombre_prov))
                         {
                             frm.lblPaciente.Text = Consulta.nompac + " " + Consulta.apellido;
